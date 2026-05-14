@@ -98,7 +98,7 @@ const CollaborativeEditor = () => {
 
     const newDoc = new Y.Doc();
     const newProvider = new WebrtcProvider(roomId, newDoc, {
-      signaling: ['ws://localhost:4444'],
+      signaling: ['wss://signaling-server-zfjb.onrender.com'],
       dataChannel: { ordered: false },
     });
 
