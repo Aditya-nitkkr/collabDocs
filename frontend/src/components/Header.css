@@ -1,0 +1,50 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.signup-btn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.logout-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.user-name {
+    margin: 0 1rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}

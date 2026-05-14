@@ -1,0 +1,68 @@
+
+.tiptap {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  min-height: 300px; 
+  background-color: #ffffff;
+  color: #333;
+  outline: none; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.tiptap:focus {
+  border-color: #646cff; 
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+
+
+.tiptap p {
+  margin: 0.5em 0;
+}
+
+.tiptap h1, .tiptap h2, .tiptap h3 {
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+.tiptap ul, .tiptap ol {
+  padding-left: 1.5rem;
+}
+
+
+.tiptap p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+
+.collaboration-cursor__caret {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+
+
+.collaboration-cursor__label {
+  border-radius: 3px 3px 3px 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  padding: 2px 4px;
+  position: absolute;
+  top: -1.4em;
+  user-select: none;
+  white-space: nowrap;
+}
