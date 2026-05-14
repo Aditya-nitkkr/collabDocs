@@ -5,7 +5,10 @@ import { Login } from "./pages/Login.jsx";
 import { EditorDashboard } from "./pages/EditorDashboard.jsx";
 
 const router = createBrowserRouter([
-
+    {
+        path: "/",
+        element: <Navigate to="/editor/home" />
+    },
     {
         path: "/signup",
         element: <Signup />,
@@ -21,7 +24,7 @@ const router = createBrowserRouter([
         element: <EditorDashboard />
     },
     {
-        path: "editor/:id",
+        path: "/editor/:id",
         element: <CollaborativeEditor />
     }
 
