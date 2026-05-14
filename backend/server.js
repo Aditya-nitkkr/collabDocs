@@ -23,7 +23,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://collabdocs-real-time-app.onrender.com",
     methods: ["GET", "POST", "PATCH", "DELETE"],
     credentials: true,
   }),
@@ -53,7 +53,7 @@ const dirtyFlagPermanent = new Set();
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://collabdocs-real-time-app.onrender.com",
     methods: ["GET", "POST"],
   },
 });
