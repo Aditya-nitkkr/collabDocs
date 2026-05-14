@@ -17,6 +17,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const url = process.env.MONGO_URL;
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -218,6 +219,6 @@ setInterval(async () => {
   dirtyFlagPermanent.clear();
 }, LONG_INTERVAL);
 
-httpServer.listen(3000, () => {
+httpServer.listen(PORT, () => {
   console.log("Server running on port 3000");
 });
