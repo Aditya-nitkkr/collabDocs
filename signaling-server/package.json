@@ -1,0 +1,11 @@
+{
+  "name": "y-webrtc-signaling-service",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "y-webrtc-signaling --port 4444"
+  },
+  "dependencies": {
+    "y-webrtc": "^10.3.0"
+  }
+}

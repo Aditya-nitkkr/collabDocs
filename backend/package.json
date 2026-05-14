@@ -4,7 +4,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "signaling": "y-webrtc-signaling --port 4444"
   },
   "keywords": [],
