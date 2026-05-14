@@ -10,6 +10,10 @@ const router = createBrowserRouter([
         element: <Navigate to="/editor/home" />
     },
     {
+        path: "/index.html",
+        element: <Navigate to="/editor/home" />
+    },
+    {
         path: "/signup",
         element: <Signup />,
 

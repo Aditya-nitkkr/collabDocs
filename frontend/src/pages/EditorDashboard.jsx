@@ -71,7 +71,7 @@ export const EditorDashboard = () => {
             });
 
         } catch (error) {
-            console.log("error in deleting ", error);
+            // console.log("error in deleting ", error);
             toast.error("Error deleting room. Please try again.", {
                 duration: 4000,
                 style: {
@@ -105,7 +105,7 @@ export const EditorDashboard = () => {
 
 
         } catch (err) {
-            console.error("Rename failed", err);
+            // console.error("Rename failed", err);
             toast.error("Could not save title", {
                 duration: 4000,
                 style: {
